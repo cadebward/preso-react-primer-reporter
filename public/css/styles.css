@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'fira_code';
+  src: url('css/font/firacode_regular_macroman/FiraCode-Regular-webfont.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_codeMedium';
+  src: url('css/font/firacode_medium_macroman/FiraCode-Medium-webfont.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fira_codeBold';
+  src: url('css/font/firacode_bold_macroman/FiraCode-Bold-webfont.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #e3e7ea;
+  font-family: 'Roboto Slab', serif;
+}
+
+.step {
+  font-size: 2em;
+}
+
+.step.nofade {
+  opacity: 1;
+}
+
+.step.invis {
+  opacity: 0;
+}
+
+.step.invis.active {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 128px;
+  font-weight: bold;
+  line-height: 164px;
+  color: #00b586;
+}
+
+h2 {
+  font-size: 96px;
+  line-height: 96px;
+  color: #468dcb;
+}
+
+h3 {
+  font-size: 64px;
+  line-height: 64px;
+  color: #8b73b9;
+}
+
+h4 {
+  font-size: 48px;
+  line-height: 48px;
+  color: #468DCB;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+hr {
+  border-color: #ffbc42;
+}
+
+.small {
+  font-size: 36px;
+  color: #2a628f;
+}
+
+.x-small {
+  font-size: 30px;
+  color: #16324f;
+}
+
+.xx-small {
+  font-size: 24px;
+  color: #13293d;
+}
+
+.xxx-small {
+  font-size: 18px;
+  color: #13293d;
+}
+
+.right {
+  float: right;
+  width: 320px;
+}
+
+.left {
+  float: left;
+  width: 320px;
+}
+
+em {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#voter {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.answer {
+}
+
+.answer > span {
+  border-radius: 4px;
+  margin: 0 11px;
+  padding: 7px 7px 4px 9px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.side-by-side {
+  width: 800px;
+}
+
+.side-by-side > .left,
+.side-by-side > .right {
+  width: 390px;
+  font-size: 0.6em;
+}
+
+.thin-inline-code code {
+  font-size: 0.7em;
+  padding: 4px 11px 0 11px !important;
+}
+
+.dashboard {
+  position: relative;
+  padding: 5px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+#p {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 5px;
+}
+
+#v {
+  margin-left: 18px;
+}
+
+#participation-url {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  display: none;
+}
+
+#participation-url > span {
+  font-size: 6em;
+}
